@@ -1,0 +1,6 @@
+name: ExampleMeteor
+version: '1.0.0'
+authors:
+  - JustJustin
+main: me.blueslime.examplemeteor.ExampleMeteor
+api-version: '1.20'
