@@ -17,9 +17,16 @@ public class GamePlayer implements StorageObject {
     @StorageKey(key = "isFromPeru", defaultValue = "false")
     private boolean peru;
 
+    /**
+     * From BukkitMeteor 1.9.1.4, you can use @StorageIdentifier
+     * in the constructor, but it only supports String saving.
+     * If you want to save using id, please follow the example in this GamePlayer.
+     * the StorageIdentifier saves the content of a field in a String.
+     * The field name for the StorageIdentifier is not important.
+     **/
     @StorageConstructor
     public GamePlayer(
-        @StorageKey(key = "_id") String id,
+        @StorageIdentifier String id,
         @StorageKey(key = "isFromPeru", defaultValue = "false") boolean peru
     ) {
         this.uuid = UUID.fromString(id);

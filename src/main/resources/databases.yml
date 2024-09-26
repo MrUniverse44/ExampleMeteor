@@ -1,0 +1,4 @@
+# This is only for the following example of the main class.
+mongo:
+  uri: "uri here"
+  database: "db name here"
